@@ -1,0 +1,80 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main>
+    <section id="slider">
+        <div class="owl-carousel slider">
+            @foreach (var item in Model.Sliders)
+            {
+                <div> <img src="~/img/@item.Image" alt=""> </div>
+            }
+        </div>
+        <div class="container context pl-lg-5 ml-lg-3">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text">
+                        <h1>@Html.Raw(Model.SliderDetail?.Head)</h1>
+                        <h1>@Model.SliderDetail?.Title</h1>
+                        <p class="text-black-50 d-none d-sm-block">@Model.SliderDetail?.Description</p>
+                    </div>
+                    <div class="img">
+                        <img src="~/img/@Model.SliderDetail?.Image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12 d-flex justify-content-between">
+                    <ul class="category d-none d-md-flex list-unstyled">
+                        <li><a href="" data-id="all">All</a></li>
+                        @foreach (var category in Model.Categories)
+                        {
+                            <li><a href="" data-id="@category.Name.ToLower()">@category.Name</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row load-products">
+                <input type="hidden" class="product-count" value="@ViewBag.ProductCount" />
+                <partial name="_ProductPartial" model="Model.Products" />
+            </div>
+
+            <div class="d-flex justify-content-center my-5">
+                <button class="btn btn-danger btn-load-more rounded-0 px-5">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-6">
+                    <div class="img">
+                        <img src="~/img/h3-video-img.jpg" class="img-fluid" alt="">
+                        <div class="player position-absolute rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fas fa-play fa-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text mt-5 mt-lg-0 px-lg-5">
+                        <h1>Suprise Your <span>Valentine!</span> Let us arrange a smile.</h1>
+                        <p class="py-3">Where flowers are our inspiration...</p>
+                        <ul class="list-unstyled">
+                            <li class="mt-3"><img src="~/img/h1-custom-icon.png" class="mr-2"> Hand picked just for you.</li>
+                            <li class="mt-3"><img src="~/img/h1-custom-icon.png" class="mr-2"> Unique arrangements</li>
+                            <li class="mt-3"><img src="~/img/h1-custom-icon.png" class="mr-2"> Best selection of orchids</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
