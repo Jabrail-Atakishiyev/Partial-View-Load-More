@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vito\\Desktop\\PartialView-LoadMore\\WebAppPractiece.csproj": {}
+    "C:\\Users\\Vito\\Desktop\\apa101\\Session,Cookie,Basket\\WebAppPractiece.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vito\\Desktop\\PartialView-LoadMore\\WebAppPractiece.csproj": {
+    "C:\\Users\\Vito\\Desktop\\apa101\\Session,Cookie,Basket\\WebAppPractiece.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vito\\Desktop\\PartialView-LoadMore\\WebAppPractiece.csproj",
+        "projectUniqueName": "C:\\Users\\Vito\\Desktop\\apa101\\Session,Cookie,Basket\\WebAppPractiece.csproj",
         "projectName": "WebAppPractiece",
-        "projectPath": "C:\\Users\\Vito\\Desktop\\PartialView-LoadMore\\WebAppPractiece.csproj",
+        "projectPath": "C:\\Users\\Vito\\Desktop\\apa101\\Session,Cookie,Basket\\WebAppPractiece.csproj",
         "packagesPath": "C:\\Users\\Vito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vito\\Desktop\\PartialView-LoadMore\\obj\\",
+        "outputPath": "C:\\Users\\Vito\\Desktop\\apa101\\Session,Cookie,Basket\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,6 +64,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.22, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
             }
           },
           "imports": [

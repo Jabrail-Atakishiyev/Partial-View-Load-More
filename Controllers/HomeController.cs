@@ -17,6 +17,14 @@ namespace WebAppPractiece.Controllers
 
         public async Task<IActionResult> Index()
         {
+            //HttpContext.Session.SetString("name","Mahmud");
+            //HttpContext.Response.Cookies.Append("surname","Rahimli",new CookieOptions() 
+            //{ 
+            //    MaxAge = TimeSpan.FromSeconds(10)
+            //});
+            //ViewBag.Name = HttpContext.Session.GetString("name");
+            //ViewBag.Surname = HttpContext.Request.Cookies["surname"];
+
             var sliders = await _context.Sliders.Where(m => !m.IsDeleted).ToListAsync();
             var sliderDetail = await _context.SlidersDetails.FirstOrDefaultAsync(m => !m.IsDeleted);
             var categories = await _context.Categories.Where(m => !m.IsDeleted).ToListAsync();

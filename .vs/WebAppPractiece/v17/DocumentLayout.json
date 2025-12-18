@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Vito\\Desktop\\PartialView-LoadMore\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Vito\\Desktop\\apa101\\Session,Cookie,Basket\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5158B62D-26C8-4052-8E72-BA2D9EAB089E}|WebAppPractiece.csproj|c:\\users\\vito\\desktop\\apa101\\session,cookie,basket\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5158B62D-26C8-4052-8E72-BA2D9EAB089E}|WebAppPractiece.csproj|solutionrelative:controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\Vito\\Desktop\\apa101\\Session,Cookie,Basket\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BasketController.cs",
+              "ToolTip": "C:\\Users\\Vito\\Desktop\\apa101\\Session,Cookie,Basket\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "Controllers\\BasketController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:34:24.894Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

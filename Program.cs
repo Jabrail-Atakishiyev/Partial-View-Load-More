@@ -8,7 +8,10 @@ namespace WebAppPractiece
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(5);
+            });
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<Data.AppDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -22,6 +25,8 @@ namespace WebAppPractiece
             }
 
             app.UseHttpsRedirection();
+            app.UseSession();
+            app.UseRouting();
             var provider = new FileExtensionContentTypeProvider();
             provider.Mappings[".svg"] = "image/svg+xml";
 
